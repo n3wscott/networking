@@ -34,7 +34,7 @@ var global rigging.GlobalEnvironment
 var nt = &networkingtest.T{}
 
 func TestMain(m *testing.M) {
-	global := test.NewGlobalEnvironment()
+	global = test.NewGlobalEnvironment()
 
 	global.WithFlags(nt.InitFlags) // TODO: maybe this moves into NewEnv?
 	global.InitFlags(flag.CommandLine)
